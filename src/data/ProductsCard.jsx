@@ -16,6 +16,7 @@
             <img
                 src={item.image} 
                 alt={item.title}
+                loading='lazy'
                 className="w-full h-50 object-cover rounded-tr-[60px] rounded-bl-[60px]"
             />
 
