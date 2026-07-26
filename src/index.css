@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Poppins", sans-serif;
+    --color-background: var(--background);
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-accent: var(--accent);
+    --color-text: var(--text);
+    --color-card: var(--card);
+    --color-text2: var(--text2);
+}
+
+@layer base {
+    :root {
+        --background: #FAFAFA;
+        --card: #FFFFFF;
+        --primary: #ffe8e1;
+        --secondary: #4a4a4a;
+        --accent: #f5f1f0;
+        --text: #3c3c3c;
+        --text2: #eeb09e;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-background text-secondary transition-colors duration-300 overflow-x-hidden;
+        font-feature-settings: "rlig" 1, "calt" 1;
+        font-family: "Playfair Display", serif;
+    }
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+
+    @media (width >= 640px) {
+        max-width: 640px;
+    }
+    @media (width >= 768px) {
+        max-width: 768px;
+    }
+    @media (width >= 1024px) {
+        max-width: 1024px;
+    }
+    @media (width >= 1280px) {
+        max-width: 1280px;
+    }
+    @media (width >= 1400px) {
+        max-width: 1400px;
+    }
+}
+@utility text-glow {
+    @apply relative;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+@utility card-hover {
+    @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+#root {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.btn2 {
+    @apply bg-primary flex flex-row items-center gap-1 px-5 py-2 mt-10 rounded-tr-[20px] rounded-bl-[20px]
+}
+.card1 {
+    @apply flex flex-col items-center justify-center px-8 sm:px-30 py-4;
+}
+.card2 {
+    @apply bg-background flex flex-col  p-2;
+}
+.leaf {
+    @apply bg-primary text-secondary flex flex-col items-center justify-center rounded-[80%_2%_70%_0%];
+}
+.leaf2 {
+    @apply bg-background text-secondary flex flex-col items-center justify-center rounded-[80%_2%_70%_0%];
+}
+
+.btn {
+    @apply flex items-center bg-text text-white p-2 px-8 rounded-tr-[20px] rounded-bl-[20px];
+}
+.hero-bg {
+  background-image: url("/src/assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bounce-button {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
