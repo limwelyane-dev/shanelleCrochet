@@ -92,12 +92,7 @@
 .btn {
     @apply flex items-center bg-text text-white p-2 px-8 rounded-tr-[20px] rounded-bl-[20px];
 }
-.hero-bg {
-  background-image: url("/src/assets/background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 .bounce-button {
   animation: bounce 2s infinite;
 }

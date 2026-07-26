@@ -6,6 +6,7 @@ import pig from "/src/assets/pig.jpg"
 import unicorn from "/src/assets/unicorn.jpg"
 import rabbit from "/src/assets/rabbit.jpg"
 import WhileInView from './HomeAni';
+import background from "/src/assets/background.png"
 
 function HomeSection() {
 
@@ -63,7 +64,13 @@ const wordVariants = {
 
   return (
     <>
-    <section id="home" className="relative hero-bg min-h-screen flex flex-col items-center justify-center px-4 ">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center px-4 ">
+      <img
+        src={background}
+        alt=""
+        loading="lazy"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
 
         <div className='flex flex-col items-center justify-center mt-20'>
           <div className='flex flex-col items-center p-4 mb-6'>
