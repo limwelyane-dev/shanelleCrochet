@@ -14,12 +14,12 @@ function AboutSection() {
         
         <WhileInView2 />
 
-        <div className='flex flex-col lg:flex-row items-center bg-primary justify-between p-12 gap-15 mt-8 rounded-3xl'>
+        <div className='flex flex-col lg:flex-row items-center bg-white justify-between p-8 gap-15 mt-8 rounded-3xl'>
           <motion.div 
           initial={{x: -200, opacity: 0}}
           whileInView={{x: 0, opacity: 1}}
           viewport={{once: false}}
-          transition={{duration: 1, delay: 0.8}}
+          transition={{duration: 0.8, delay: 1.2}}
           className="p-4 w-full">
             <div className='flex flex-col text-left justify-center font-sans text-[15px] gap-2'>
               <p>At <span className='font-bold'>Shanelle Crochet</span>, we believe every handmade creation should be as special as the person receiving it.</p>
@@ -43,7 +43,7 @@ function AboutSection() {
           initial={{x: 200, opacity: 0}}
           whileInView={{x: 0, opacity: 1}}
           viewport={{once: false}}
-          transition={{duration: 1, delay: 0.8 }} 
+          transition={{duration: 0.8, delay: 1.2 }} 
           className="grid grid-cols-2 gap-4 w-full max-w-sm md:max-w-md p-4">
             <div className='min-h-40 bg-accent'></div>
             <div>
