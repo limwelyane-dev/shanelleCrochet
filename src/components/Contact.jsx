@@ -13,7 +13,7 @@ function ContactSection() {
   return (
     <section
   id="contact"
-  className="relative bg-gray-800 font-sans text-white py-12 px-5 z-40"
+  className="relative bg-gray-800 font-sans text-white py-12 px-5 z-40 overflow-x-hidden"
 >
   <div className="container mx-auto">
 

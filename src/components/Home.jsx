@@ -64,7 +64,7 @@ const wordVariants = {
 
   return (
     <>
-    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center px-4 ">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-x-hidden">
       <img
         src={background}
         alt=""

@@ -40,7 +40,7 @@ export default function ShopSection({ addToCart, searchTerm }) {
 
 
   return (
-    <section id='shop' className="flex flex-col items-center justify-center p-4 mb-8">
+    <section id='shop' className="flex flex-col items-center justify-center p-4 mb-8 overflow-x-hidden">
       
        <WhileInView />
 

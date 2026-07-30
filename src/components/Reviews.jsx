@@ -37,7 +37,7 @@ function ReviewsSection() {
   return (
     <section
       id="reviews"
-      className="relative min-h-screen mt-8 flex flex-col items-center justify-center"
+      className="relative min-h-screen mt-8 flex flex-col items-center justify-center overflow-x-hidden"
     >
       <WhileInView4 />
 

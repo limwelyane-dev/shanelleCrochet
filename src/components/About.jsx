@@ -10,7 +10,7 @@ function AboutSection() {
   return (
 
     <WhileInView3>
-      <section id='about' className="relative min-h-screen flex flex-col items-center justify-center py-16 px-5">
+      <section id='about' className="relative min-h-screen flex flex-col items-center justify-center py-16 px-5 overflow-x-hidden">
         
         <WhileInView2 />
 
